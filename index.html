@@ -4,9 +4,24 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="cookies.js"></script>
 	<script src="app.js"></script>
 </head>
 <body>
+	<div id="wrapper">
+		<h2> Candy Shop</h2>
+		<div id="order">
+		<label>Chocolate</label> <input id="chocolate" type="text"><br>
+		<label>Lemon</label><input id="lemon" type="text"><br>
+		<label>Sugar</label><input id="sugar" type="text"><br>
+		<input id="submit_order" type="submit" onclick="order()">
 
+		</div>
+		<div id="history">
+		<label>Chocolate</label> <h6 id="chocoConsume"> </h6> <br>
+		<label>Lemon</label> <h6 id="lemonConsume"></h6> <br>
+		<label>Sugar</label> <h6 id="sugarConsume"></h6> <br>
+		</div>
+	</div>
 </body>
 </html>
