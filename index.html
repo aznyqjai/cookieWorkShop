@@ -15,13 +15,17 @@
 		<label>Lemon</label><input id="lemon" type="text"><br>
 		<label>Sugar</label><input id="sugar" type="text"><br>
 		<input id="submit_order" type="submit" onclick="order()">
+		<input id="clear" type="submit" value="Feeling Quity??" onclick="clearHistory()">
 
 		</div>
 		<div id="history">
-		<label>Chocolate</label> <h6 id="chocoConsume"> </h6> <br>
-		<label>Lemon</label> <h6 id="lemonConsume"></h6> <br>
-		<label>Sugar</label> <h6 id="sugarConsume"></h6> <br>
+		<h5> Already Consumed</h5>
+		<h6 style="display: inline">Chocolate</h6> <h6 id="chocoConsume" style="display: inline"> </h6> <br>
+		<h6 style="display: inline">Lemon</h6> <h6 id="lemonConsume" style="display: inline"></h6> <br>
+		<h6 style="display: inline">Sugar</h6> <h6 id="sugarConsume" style="display: inline"></h6> <br>
 		</div>
+
+
 	</div>
 </body>
 </html>
