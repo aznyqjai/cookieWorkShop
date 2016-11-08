@@ -8,7 +8,7 @@ var lemonConsumed=0;
 var sugarConsumed=0;
 
 function checkReturn(){
-	if (Cookies.get("visited")){
+	if ((Cookies.get("chocolate"))||(Cookies.get("lemon"))||(Cookies.get("sugar"))){
 		$("#history").show();
 		$("#chocoConsume").html(Cookies.get("chocolate"));
 		$("#lemonConsume").html(Cookies.get("lemon"));
@@ -23,9 +23,9 @@ function checkReturn(){
 			sugarConsumed=Cookies.get("sugar");
 		}
 	}
-	else{
-		Cookies.set("visited",true);
-	}
+	// else{
+	// 	Cookies.set("visited",true);
+	// }
 }
 
 function order(){
@@ -47,6 +47,21 @@ function order(){
 	Cookies.set("lemon", parseInt(lemonAmount)+parseInt(lemonConsumed));
 	Cookies.set("sugar", parseInt(sugarAmount)+parseInt(sugarConsumed));
 }
+
+
+function chocolateOne(){
+	Cookies.set("chocolate", parseInt(chocolateConsumed)+1);
+}
+
+function lemonOne(){
+	Cookies.set("lemon", parseInt(lemonConsumed)+1);
+}
+
+function sugarOne(){
+	Cookies.set("sugar", parseInt(sugarConsumed)+1);
+}
+
+
 
 function clearHistory(){
 	Cookies.expire("visited");

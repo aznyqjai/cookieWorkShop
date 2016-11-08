@@ -11,10 +11,16 @@
 	<div id="wrapper">
 		<h2> Candy Shop</h2>
 		<div id="order">
-		<label>Chocolate</label> <input id="chocolate" type="text"><br>
-		<label>Lemon</label><input id="lemon" type="text"><br>
-		<label>Sugar</label><input id="sugar" type="text"><br>
-		<input id="submit_order" type="submit" onclick="order()">
+		<label>Chocolate</label> <input id="chocolate" type="text">
+		<button id="choOneMore" onclick="chocolateOne()">One More?</button>
+		<br>
+		<label>Lemon</label><input id="lemon" type="text">
+		<button id="choOneMore" onclick="lemonOne()">One More?</button>
+		<br>
+		<label>Sugar</label><input id="sugar" type="text">
+		<button id="choOneMore" onclick="sugarOne()">One More?</button>
+		<br>
+		<input id="submit_order" type="submit" value="Bulk Order" onclick="order()">
 		<input id="clear" type="submit" value="Feeling Quity??" onclick="clearHistory()">
 
 		</div>
