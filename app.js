@@ -23,9 +23,6 @@ function checkReturn(){
 			sugarConsumed=Cookies.get("sugar");
 		}
 	}
-	// else{
-	// 	Cookies.set("visited",true);
-	// }
 }
 
 function order(){
@@ -61,17 +58,10 @@ function sugarOne(){
 	Cookies.set("sugar", parseInt(sugarConsumed)+1);
 }
 
-
-
 function clearHistory(){
 	Cookies.expire("visited");
 	Cookies.expire("chocolate");
 	Cookies.expire("lemon");
 	Cookies.expire("sugar");
 	console.log("clear () fired");
-	//checkReturn();
 }
-
-//console.log("chocolate ordered:  " + chocolateAmount);
-// console.log("lemon ordered:  " + lemonAmount);
-// console.log("sugar ordered: " + sugarAmount);
